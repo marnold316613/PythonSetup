@@ -53,7 +53,7 @@ li[3]='z'
 # print(li[2])
 # print(len(li))
 
-# to copy a list use [:]
+# to copy a list use [:]  or .copy()
 newLi=li[:]
 newLi[3]='frank'
 # print(li[::1])
@@ -80,7 +80,39 @@ matrix =[
 matrix.pop() # pops off whatever is at the end of the list and returns it
 # matrix.pop(0) # pops off at index value and returns it
 
-matrix.remove([4,5,6])  # remove, removes a value from the array
-print(matrix)
+# matrix.remove([4,5,6])  # remove, removes a value from the array
+# print(matrix)
 
-matrix.clear() # clears the list/array
+# print(matrix.index(7)) # returns the index of the value, value must exist or an error is caused
+
+# print('value' in matrix) # returns true false, # can also be used for searching strings
+
+# print(matrix.count(3))  # returns how many times a value occurs in a list
+
+# matrix.clear() # clears the list/array
+
+# test= [1,2,3,4,5,11,'a','b','c','d','bb']  cannot sort arrays mixed of strings and int, at least not with default sorting
+
+test= [1,2,3,4,5,11,12,6]
+
+test=['a','b','bb','aa','ac','d']
+
+test.sort() # sorts the existing array
+print(test)
+# sorted(matrix)  returns a new sorted array 
+
+test.reverse()  # this reverses the index but does not sort the array
+
+print(list(range(1,100)))  # creates an list with the values of 1 thru 99
+
+' '.join  # is used to combine values into a single string, this returns a new string, whatever value is in ' ' becomes the separator, so usually a blank space
+
+#list unpacking, mapping variables to values in a list, etc
+
+a,b,c, *other = [1,2,3,4,5,6,7]  #*other assigns the rest of the array to its value
+
+print(b)
+print(other)
+
+# None is a special value in python, probably like null
+None 
