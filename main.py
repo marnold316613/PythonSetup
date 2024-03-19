@@ -116,3 +116,16 @@ print(other)
 
 # None is a special value in python, probably like null
 None 
+
+# Dictionary  = an unordered key value pair, keys need to be unmutable, so basically only primitives
+dictionary = {
+  'a':1,
+  'b':2
+}
+print(dictionary['a'])
+
+user2=dict(name='fred', age=20)  # alternate way to create a dictionary
+print(user2)
+# .get will check if a key exists and returns None if it does not or the value if it has it
+print(dictionary.get('a',22))  # an optional value can be added in case the key is not found
+
