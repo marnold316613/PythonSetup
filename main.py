@@ -107,7 +107,7 @@ print(list(range(1,100)))  # creates an list with the values of 1 thru 99
 
 ' '.join  # is used to combine values into a single string, this returns a new string, whatever value is in ' ' becomes the separator, so usually a blank space
 
-#list unpacking, mapping variables to values in a list, etc
+#list unpacking, mapping variables to values in a list, etc, works with tuples as well
 
 a,b,c, *other = [1,2,3,4,5,6,7]  #*other assigns the rest of the array to its value
 
@@ -129,3 +129,17 @@ print(user2)
 # .get will check if a key exists and returns None if it does not or the value if it has it
 print(dictionary.get('a',22))  # an optional value can be added in case the key is not found
 
+print('a' in dictionary.keys())
+
+dictionary.update({'b':20})
+dictionary.update({'c':30})  # if key doesn't exist its added
+
+
+print(dictionary.items())
+
+dictionary2=dictionary.copy()
+
+# Tuple is an unmutable list
+my_tuple=(1,2,3,4,5,6)
+
+print(my_tuple)
