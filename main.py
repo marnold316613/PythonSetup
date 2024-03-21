@@ -140,6 +140,20 @@ print(dictionary.items())
 dictionary2=dictionary.copy()
 
 # Tuple is an unmutable list
-my_tuple=(1,2,3,4,5,6)
+my_tuple=(1,2,3,4,5,6,6,6,6)
 
 print(my_tuple)
+
+# sets are unordered sets of unique objects
+
+my_set = {1,2,3,4,5,5,5,12}
+your_set= {4,5,6,7,8,9,10}
+my_set.add(7)
+my_set.add(1)
+#print(my_set)
+#print(set(my_tuple))
+#print(list(my_tuple))
+my_set.discard(5)
+
+print(my_set.difference(your_set))  # difference returns a new set with diff
+my_set.difference_update(your_set)  # updates the existing set
