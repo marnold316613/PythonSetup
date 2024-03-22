@@ -157,3 +157,12 @@ my_set.discard(5)
 
 print(my_set.difference(your_set))  # difference returns a new set with diff
 my_set.difference_update(your_set)  # updates the existing set
+
+is_old= True
+is_licensed=False
+if is_old:
+  print('condition met')  #indentation instead of brackets
+elif is_licensed:
+  print('help me')
+else:
+  print('whatever')
