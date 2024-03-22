@@ -166,3 +166,8 @@ elif is_licensed:
   print('help me')
 else:
   print('whatever')
+
+# truthy and falsy  0, '', None, etc are false
+  # ternary operator
+can_drive = "driving allowed" if is_old and is_licensed else "driving not allowed"
+print('drive me',can_drive)
