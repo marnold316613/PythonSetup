@@ -171,3 +171,5 @@ else:
   # ternary operator
 can_drive = "driving allowed" if is_old and is_licensed else "driving not allowed"
 print('drive me',can_drive)
+
+# went thru logical operators, they are the same as other languages
