@@ -173,3 +173,43 @@ can_drive = "driving allowed" if is_old and is_licensed else "driving not allowe
 print('drive me',can_drive)
 
 # went thru logical operators, they are the same as other languages
+
+# == evaluates value not object type
+# []==[] or 10 == 10.0
+#  is is a reference comparison, the objects much share the same memory space, aka the same pointer
+print('1' is '1')
+print([] is [])  # false as they are different objects
+# for loops 
+for item in 'Zero to Mastery':
+  print(item)
+
+for item in my_set:
+  print(item)
+
+# iterables - list, dictionary, tuple, set, string
+  
+user= {
+  'name': 'Golem',
+  'age': 50,
+  'can_swin': True
+}
+
+for item in user: # shows key only
+  print(item)
+for item in user.keys(): # shows key only
+  print(item)
+
+for item in user.items():  # gets key value pair
+  print(item)
+
+# for key,value in user: # another way to get key value
+#   print(key, value)
+
+for item in user.values():  # gets value
+  print(item)
+
+for item in (range(100)): #range starts at 0 by default and is counted as 1 so this range actually goes from 0 to 99
+  print(item)
+
+for _ in (range(0,100,2)):  #  _ is considered a disposable variable in python
+  print(_)
