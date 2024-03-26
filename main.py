@@ -223,3 +223,6 @@ while index<50:
   print(index)
 else:
   print('we are done') # else only works if there is no break in the while statement
+
+# print('something', end=' ')  this will not print a new line until it finds a ' ' 
+  
