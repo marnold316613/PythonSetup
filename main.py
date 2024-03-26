@@ -213,3 +213,13 @@ for item in (range(100)): #range starts at 0 by default and is counted as 1 so t
 
 for _ in (range(0,100,2)):  #  _ is considered a disposable variable in python
   print(_)
+
+for i,char in enumerate('Helloooo World'):  # enumerate just addes an index value to an iterable object
+  print(i,char)
+
+index=0
+while index<50:
+  index+=1
+  print(index)
+else:
+  print('we are done') # else only works if there is no break in the while statement
