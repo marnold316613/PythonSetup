@@ -225,4 +225,9 @@ else:
   print('we are done') # else only works if there is no break in the while statement
 
 # print('something', end=' ')  this will not print a new line until it finds a ' ' 
-  
+# functions
+
+def say_hello(name):
+  print(f'hello {name} my function works')
+
+say_hello('mike')
