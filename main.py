@@ -246,3 +246,23 @@ def super_fun(*args, **kwargs):   # * allows for unlimited arguments  ** allows 
   return sum(args)
 
 print(super_fun(1,2,3,4,5))
+
+
+#  := walrus operator    allows you to assing a variable as part of a larger expression
+a='hellooooo'
+(n := len(a))+20
+print(n)  # value is 9 not 29 as i assigned it to the len(a)
+
+# global is used to add a global scope variable work in a function without having to pass it as a parameter
+
+total = 0
+
+def count():
+  global total
+  total+=1
+  return total
+
+count()
+count()
+print(count())
+
