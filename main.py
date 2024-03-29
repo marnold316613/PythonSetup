@@ -227,7 +227,22 @@ else:
 # print('something', end=' ')  this will not print a new line until it finds a ' ' 
 # functions
 
-def say_hello(name):
-  print(f'hello {name} my function works')
+def say_hello(firstname, lastname=''):
+  print(f'hello {firstname} {lastname} my function works')
 
 say_hello('mike')
+
+say_hello(firstname='mike',lastname='arnold')
+
+def addsum(x,y):
+  '''
+  Info: This function add sums,  this is an example of a document string
+  '''
+  return x+y
+
+print(addsum(5,6))
+
+def super_fun(*args, **kwargs):   # * allows for unlimited arguments  ** allows for unlimited keyword arguments
+  return sum(args)
+
+print(super_fun(1,2,3,4,5))
