@@ -266,3 +266,7 @@ count()
 count()
 print(count())
 
+
+#nonlocal is a way to get to a variable scope that is not global, i don't know why you would really need it, probably a weird scenario
+
+
