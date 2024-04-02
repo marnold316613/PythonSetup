@@ -15,3 +15,20 @@ class PlayerCharacter:  # we Pascal case as a convention so others know this is 
 
 player1 = PlayerCharacter('mike')
 player1.run()
+
+# there are no truly private variables in python, _variablename is way to let others know the _ means private
+
+class User():
+  def sign_in(self):
+    print('logged in')
+
+class Wizard(User):
+  pass
+
+class Archer(User):
+  pass
+
+wizard1 = Wizard()
+wizard1.sign_in()
+
+print(isinstance(wizard1,User))
