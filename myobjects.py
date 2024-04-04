@@ -19,16 +19,23 @@ player1.run()
 # there are no truly private variables in python, _variablename is way to let others know the _ means private
 
 class User():
+  def __init__(self,email):
+    self.email=email
   def sign_in(self):
     print('logged in')
 
 class Wizard(User):
-  pass
+  def __init__(self, email):
+    super().__init__(email)
+    print(self.email)
 
 class Archer(User):
   pass
 
-wizard1 = Wizard()
+wizard1 = Wizard("mike@email.com")
 wizard1.sign_in()
 
-print(isinstance(wizard1,User))
+#print(isinstance(wizard1,User))
+
+# in multiple inheritance scenarios which is something i avoid but python allows
+# there is something called mro()  which is method resolution order, a way to resolve methods when there is multiple inheritance
