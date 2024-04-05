@@ -39,3 +39,23 @@ wizard1.sign_in()
 
 # in multiple inheritance scenarios which is something i avoid but python allows
 # there is something called mro()  which is method resolution order, a way to resolve methods when there is multiple inheritance
+def multiplyby2(item):
+  return item*2
+
+def only_odd(item):
+  if item % 2 != 0:
+    return True
+myarray = [1,2,3,4,5,6,7,8,9]
+myarray2 = [11,12,13,14,15]
+print(list(map(multiplyby2, myarray)))
+
+print(list(filter(only_odd,myarray)))
+
+print(list(zip(myarray,myarray2))) # zips together multiple iterables, limited to the short list
+
+from functools import reduce
+
+def accumulator(acc, item):
+  return acc+item
+
+print(reduce(accumulator,myarray,10))
