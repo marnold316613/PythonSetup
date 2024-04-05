@@ -59,3 +59,22 @@ def accumulator(acc, item):
   return acc+item
 
 print(reduce(accumulator,myarray,10))
+
+#lambda functions
+
+print("lambda",list(map(lambda item:item*2, myarray)))
+
+print(reduce(lambda acc,item: acc+item, myarray))
+
+# list comprehensions, something mainly unique to python
+
+my_list2 = [char for char in 'hello']
+my_list3 = [num for num in range(0,100)]
+my_list4 = [num**2 for num in range(0,100)]  # squaring each number
+my_list5 = [num**2 for num in range(0,100) if num % 2 ==0] # conditional if
+print(my_list5)
+
+simple_dict = { 'a': 1, 
+               'b': 2}
+my_dict2 = {key:value**2 for key,value in simple_dict.items() }
+print(my_dict2)
