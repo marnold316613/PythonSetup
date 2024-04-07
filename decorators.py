@@ -1,6 +1,13 @@
 #decorators
 
+import main  # import is how you get access to other python files
+# a package is just files that are in a folder, you can then import foldername.filename
+# all packages have a blank __init__.py file in them, it lets the interpreter know its a package
 
+from time import time   # from allows you to just get a particular function
+
+if __name__ == '__main__':   # this is how to test if the current file is the main file being run, 
+  pass
 
 def my_decorator(func):
   def wrap_func(*args, **kwargs):  # this pattern of *args, **kwargs keeps your decorator agnostic to the function it decorates
@@ -15,7 +22,7 @@ def hello(x,y,z):
 
 hello('hello', ' how ', 'are you?')
 
-from time import time
+
 
 def performance(func):
   def wrapper(*args, **kwargs):
